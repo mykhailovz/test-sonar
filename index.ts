@@ -128,3 +128,20 @@ function testCognitiveRule(input: any) {
       }
     }
 }
+
+testCognitiveRule();
+
+if (1) {
+  testCognitiveRule();
+}
+
+if (2) {
+  testCognitiveRule();
+}
+
+const ins = new TestingRules();
+ins.testCognitiveComplexityRule(1);
+
+if (1 === 1) {
+  console.log('More code to test');
+}
